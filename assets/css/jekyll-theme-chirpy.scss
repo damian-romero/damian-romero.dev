@@ -38,6 +38,28 @@
   --tag-border:     #3a1010;
 }
 
+// ─── Topbar ───────────────────────────────────────────────────────
+#topbar-wrapper, .topbar-wrapper {
+  background-color: var(--bg-void) !important;
+  border-bottom: 0.5px solid var(--border-subtle);
+}
+
+#topbar, .topbar {
+  background-color: var(--bg-void) !important;
+}
+
+// ─── Footer ───────────────────────────────────────────────────────
+footer, #footer, .site-footer {
+  background-color: var(--bg-void) !important;
+  border-top: 0.5px solid var(--border-subtle);
+  color: var(--text-muted);
+
+  a {
+    color: var(--text-muted);
+    &:hover { color: var(--crimson); }
+  }
+}
+
 // ─── Typography ───────────────────────────────────────────────────
 body {
   font-family: 'JetBrains Mono', monospace !important;
