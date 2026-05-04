@@ -16,10 +16,10 @@ timezone: America/Mexico_City
 
 title: Damian Romero # the main title
 
-tagline: Chatbot Developer · NLP · Conversational AI # it will display as the subtitle
+tagline: Conversational AI · NLP · Chatbot Design · Entrerprise SaaS # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+ Damian Romero's Professional Website 
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
