@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><defs>
+    <clipPath id="cut">
+      <polygon points="0,0 100,0 100,80 80,100 0,100"></polygon>
+    </clipPath>
+  </defs><rect width="100" height="100" fill="#C41E3A" clip-path="url(#cut)"></rect><text x="50" y="63" font-family="'Space Mono', monospace" font-size="38" font-weight="700" fill="#EDEDED" text-anchor="middle" letter-spacing="-1">DR</text><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
