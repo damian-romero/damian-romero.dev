@@ -1,0 +1,141 @@
+---
+---
+
+// Load Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+
+// ─── Import Chirpy base (required) ───────────────────────────────
+@import 'main';
+
+// ─── Color tokens ────────────────────────────────────────────────
+:root {
+  --bg-void:        #080808;
+  --bg-surface:     #111111;
+  --bg-card:        #1C1C1C;
+  --text-primary:   #EDEDED;
+  --text-muted:     #888888;
+  --text-faint:     #444444;
+  --crimson:        #C41E3A;
+  --crimson-deep:   #7A0020;
+  --neon-pink:      #FF006E;
+  --neon-blue:      #00CFFF;
+  --neon-red:       #FF1744;
+  --border-subtle:  #1E1E1E;
+}
+
+// ─── Base overrides ───────────────────────────────────────────────
+[data-mode="dark"],
+:root {
+  --main-bg:        var(--bg-void);
+  --sidebar-bg:     #0D0D0D;
+  --card-bg:        var(--bg-card);
+  --text-color:     var(--text-primary);
+  --text-muted-color: var(--text-muted);
+  --link-color:     var(--crimson);
+  --link-underline-color: var(--crimson-deep);
+  --border-color:   var(--border-subtle);
+  --tag-bg:         #1a0a0a;
+  --tag-border:     #3a1010;
+}
+
+// ─── Typography ───────────────────────────────────────────────────
+body {
+  font-family: 'JetBrains Mono', monospace !important;
+  background-color: var(--bg-void);
+  color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, h6,
+.site-title,
+#sidebar .site-title {
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+// ─── Sidebar ──────────────────────────────────────────────────────
+#sidebar {
+  background: #0D0D0D;
+  border-right: 0.5px solid var(--border-subtle);
+
+  .site-title a {
+    color: var(--text-primary) !important;
+    font-family: 'Space Mono', monospace;
+  }
+
+  .site-subtitle {
+    color: var(--crimson) !important;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  nav a {
+    color: var(--text-muted) !important;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    transition: color 0.15s ease;
+
+    &:hover, &.active {
+      color: var(--text-primary) !important;
+    }
+
+    &.active {
+      border-left: 2px solid var(--crimson);
+      padding-left: 6px;
+    }
+  }
+}
+
+// ─── Post cards ───────────────────────────────────────────────────
+.card, .post-preview {
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-subtle);
+  border-left: 2px solid var(--crimson);
+  border-radius: 6px;
+}
+
+// ─── Tags ─────────────────────────────────────────────────────────
+.tag, .post-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  background: var(--tag-bg);
+  color: var(--crimson);
+  border: 0.5px solid var(--tag-border);
+  letter-spacing: 0.08em;
+  border-radius: 3px;
+}
+
+// ─── Links ────────────────────────────────────────────────────────
+a {
+  color: var(--crimson);
+  text-decoration: none;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: var(--neon-red);
+  }
+}
+
+// ─── Code blocks ──────────────────────────────────────────────────
+code, pre {
+  font-family: 'JetBrains Mono', monospace !important;
+  background: #0f0f0f !important;
+  border: 0.5px solid var(--border-subtle);
+}
+
+// ─── Neon — hover accents only ────────────────────────────────────
+.btn-neon-cta {
+  color: var(--neon-pink);
+  border: 0.5px solid var(--neon-pink);
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  padding: 8px 18px;
+  background: transparent;
+  transition: box-shadow 0.15s ease;
+
+  &:hover {
+    box-shadow: 0 0 8px var(--neon-pink);
+    color: var(--neon-pink);
+  }
+}
